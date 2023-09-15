@@ -43,14 +43,12 @@
     margin-left: 30px;
 }
 #midnavbar{
-    width: 30%;
+    width: 33%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    margin-left: 20rem ;
-    /* position: relative; */
-    
+    margin-left: 12rem ;
 }
 #sidenavbar2{
     width: 20%;
@@ -69,9 +67,9 @@
 }
 .inndiv2{
     margin-top: 21px;
-    padding: 30px 200px 2px 150px;
+    padding: 30px 200px 40px 150px;
     width: 100%;
-    height: 70vh;
+    /* height: 70vh; */
     display: none;
     justify-content: space-evenly;
     position: absolute;
@@ -83,14 +81,21 @@
     list-style: none;
     font-size: 14px;
     margin: 10px;
+    color: #757575;
+}
+.list li:hover{
+    color: black;
 }
 ul .toplistitem{
     font-size: 17px;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    color: black;
 }
 #item2{
-    padding: 18px 1px;
+    padding: 18px 8px;
+    /* border-bottom: 2px solid black; */
+
 }
 #item2:hover{
     border-bottom: 2px solid black;
@@ -99,7 +104,7 @@ ul .toplistitem{
     display: flex;   
 }
 #item22{
-    padding: 18px 1px;
+    padding: 18px 8px;
 }
 #item22:hover{
     border-bottom: 2px solid black;
@@ -108,7 +113,7 @@ ul .toplistitem{
     display: flex;
 }
 #item222{
-    padding: 18px 1px;
+    padding: 18px 8px;
 }
 #item222:hover{
     border-bottom: 2px solid black;
@@ -117,7 +122,7 @@ ul .toplistitem{
     display: flex;
 }
 #item2222{
-    padding: 18px 1px;
+    padding: 18px 8px;
 }
 #item2222:hover{
     border-bottom: 2px solid black;
@@ -126,7 +131,7 @@ ul .toplistitem{
     display: flex;
 }
 #item22222{
-    padding: 18px 1px;
+    padding: 18px 8px;
 }
 #item22222:hover{
     border-bottom: 2px solid black;
@@ -149,12 +154,193 @@ button{
 #nav3{
     background-color: #f5f5f5;
     height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .noflex{
     display: flex;
     flex-direction: column;
 }
 .noflex .colgap{
-    margin-top: 30px;
+    margin-top: 25px;
 }
+#centertext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* transform: translateX(-100%); */
+
+}
+.small{
+    font-size: 12px; 
+    margin-top: 10px;
+    text-decoration: underline ;
+}
+#body{
+    margin: 0 47px;
+}
+#img img{
+   width: 100%;
+   height: 100%;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    /* height: 30vh; */
+}
+#home h1{
+    font-size: 85px;
+    font-weight: 900;
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Staatliches', cursive;
+    color: #111;
+    margin-bottom: 20px;
+    /* font-family: "Nike Futura","Helvetica Neue",Helvetica,Arial,sans-serif; */
+} 
+#home p {
+      margin-bottom: 50px;
+ }
+ #home input{
+    background-color: #111;
+    color: white;
+    padding: 8px 20px;
+    border: .5px solid #111;
+    border-radius: 17px;
+    font-size: 16px;
+ }
+#product{
+    margin-top: 70px;
+}
+
+ #product>p{
+    font-size: 25px;
+ }
+ #prdthead{
+    margin-top: 35px;
+    display: flex;
+    gap: 20px;
+ }
+ #product .prdt{
+    width: 49%;
+    height: 690px;
+    border: 2px solid black;
+ }
+ #prdt1{
+    background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_706,c_limit/40d5df93-9a52-4d89-a585-fb52e9445ba6/nike-just-do-it.png") no-repeat center center/cover;
+    /* padding-top: 500px;
+    padding-left: 40px; */
+ }
+ .prdt{
+    padding-top: 500px;
+    padding-left: 40px;
+ }
+ #prdt1 p{
+    margin: 10px;
+ }
+ #prdthead input{
+    background-color: #111;
+    color: white;
+    padding: 8px 20px;
+    border: .5px solid #111;
+    border-radius: 17px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 20px;
+ }
+ #prdt2::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://static.nike.com/a/images/f_mp4/w_706,c_limit/bdbf3bf1-ab71-4b45-a0f3-fd28a11eec30/nike-just-do-it.gif") ;
+    z-index: 1;
+    
+
+ }
+ #prdt2{
+    position: relative;
+ }
+
+ .bold{
+    font-size: 25px;
+ }
+ #trendinghead{
+    margin-top: 80px;
+ }
+ #trendinghead>p{
+    font-size: 25px;
+ }
+ #trendinghead .prdt{
+    width: 49%;
+    height: 690px;
+    /* border: 2px solid black; */
+ }
+ #trendinghead input{
+        background-color:white ;
+        color:#111;
+        padding: 8px 20px;
+        /* border: .5px solid #111; */
+        border: none;
+        border-radius: 17px;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-top: 30px
+ }
+ #trending{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+ }
+ #trending p{
+    color: white;
+    font-size: 20px;
+ }
+ .trend{
+    padding-top: 550px;
+    padding-left: 40px;
+ }
+
+ #trending1{
+      background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_706,c_limit/32cccbda-5f11-4753-bd68-47db90ffc679/nike-just-do-it.png") no-repeat center center/cover;
+
+ }
+ #trending2{
+    background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_706,c_limit/829a4807-bc59-4c10-95eb-900361666ab4/nike-just-do-it.png") no-repeat center center/cover;
+ }
+ #justin{
+    margin-top: 80px;
+ }
+ #justinimg{
+    margin-top: 30px;
+ }
+ #justinimg img{
+    width: 100%;
+ }
+
+ #justin>p{
+    font-size: 25px;
+ }
+#easy h1{
+    /* font-weight: 900; */
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Staatliches', cursive;
+}
+ #easy input{
+    background-color: #111;
+    color: white;
+    padding: 8px 20px;
+    border: .5px solid #111;
+    border-radius: 17px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 20px; 
+ }
