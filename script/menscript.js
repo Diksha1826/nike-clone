@@ -6,6 +6,7 @@ mensdata.map(function(elem , index , array){
 
     var image = document.createElement("img");
     image.setAttribute("src" , elem.image[0]);
+    image.setAttribute("class" , "nikeimg");
 
     var name = document.createElement("p");
     name.innerText = elem.product_name ;
@@ -19,7 +20,7 @@ mensdata.map(function(elem , index , array){
     div.append(image , name , description , price);
 
 
-    document.querySelector("div").append(div );
+    document.querySelector("#nikecontainer").append(div );
 
 
 })
