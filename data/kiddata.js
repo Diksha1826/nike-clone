@@ -1,14 +1,14 @@
 
-
 const kidsshoeProducts = [
-    {
-      id: 1 ,
-      image: ["https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/32038e25-d625-46e0-9c07-38f50c6dabed/cortez-basic-shoes-cLQNtQ.png" ],
-      product_name: 'Nike Cortez Basic',
-      product_details: ' Baby/Toddler Shoes',
-      price: '₹ 2 995.00',
-      sizes: ['US 4', 'US 5', 'US 6', 'US 7', 'US 8'],
-    },
+  {
+    id: 1 ,
+    image: ["https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/706cd7f8-d5f7-4db3-a5f7-3577876a0afc/air-jordan-xxxviii-fiba-older-shoes-jsK87k.png"  ],
+    product_name: 'Air Jordan XXXVIII \'FIBA\' ',
+    product_details: 'Older Kid\'s Shoes',
+    price: '₹ 11 195.00',
+    sizes: ['US 4', 'US 5', 'US 6', 'US 7', 'US 8'],
+  },
+   
       {
       id: 2 ,
       image: ["https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c2de5c5b-f279-4bae-a541-75792a0a7dab/dynamo-go-younger-easy-on-off-shoes-dCf2Zv.png"],
@@ -17,14 +17,15 @@ const kidsshoeProducts = [
       price: '₹ 4 995.00',
       sizes: ['US 4', 'US 5', 'US 6', 'US 7', 'US 8'],
     },
-      {
+    {
       id: 3 ,
-      image: [ "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/241edead-9131-4552-9d55-9b1e6762e759/jr-phantom-gx-academy-younger-older-football-shoes-NDHwxc.png"   ],
-      product_name: 'Nike Jr. Phantom GX Academy',
-      product_details: 'Older Kid\'s Shoes',
-      price: '₹ 6 495.00',
+      image: ["https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/49b1eaf8-2115-423e-8856-a2907aefb611/jordan-1-low-alt-se-shoes-sSxw84.png" ],
+      product_name: 'Jordan 1 Low Alt SE',
+      product_details: 'Baby/Toddler Shoes',
+      price: '₹ 4 267.00',
       sizes: ['US 4', 'US 5', 'US 6', 'US 7', 'US 8'],
     },
+    
       {
       id: 4 ,
       image: [src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/889ef13a-6c68-406c-badd-713ccddc74f7/air-jordan-xxxviii-older-shoes-69P5Hc.png"  ],
@@ -33,12 +34,12 @@ const kidsshoeProducts = [
       price: '₹ 11 195.00',
       sizes: ['US 4', 'US 5', 'US 6', 'US 7', 'US 8'],
     },
-      {
+    {
       id: 5 ,
-      image: ["https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/706cd7f8-d5f7-4db3-a5f7-3577876a0afc/air-jordan-xxxviii-fiba-older-shoes-jsK87k.png"  ],
-      product_name: 'Air Jordan XXXVIII \'FIBA\' ',
-      product_details: 'Older Kid\'s Shoes',
-      price: '₹ 11 195.00',
+      image: ["https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/32038e25-d625-46e0-9c07-38f50c6dabed/cortez-basic-shoes-cLQNtQ.png" ],
+      product_name: 'Nike Cortez Basic',
+      product_details: ' Baby/Toddler Shoes',
+      price: '₹ 2 995.00',
       sizes: ['US 4', 'US 5', 'US 6', 'US 7', 'US 8'],
     },
       {
@@ -57,12 +58,12 @@ const kidsshoeProducts = [
       price: '₹  7 877.00',
       sizes: ['US 4', 'US 5', 'US 6', 'US 7', 'US 8'],
     },
-      {
+    {
       id: 8 ,
-      image: ["https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/49b1eaf8-2115-423e-8856-a2907aefb611/jordan-1-low-alt-se-shoes-sSxw84.png" ],
-      product_name: 'Jordan 1 Low Alt SE',
-      product_details: 'Baby/Toddler Shoes',
-      price: '₹ 4 267.00',
+      image: [ "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/241edead-9131-4552-9d55-9b1e6762e759/jr-phantom-gx-academy-younger-older-football-shoes-NDHwxc.png"   ],
+      product_name: 'Nike Jr. Phantom GX Academy',
+      product_details: 'Older Kid\'s Shoes',
+      price: '₹ 6 495.00',
       sizes: ['US 4', 'US 5', 'US 6', 'US 7', 'US 8'],
     },
       {
@@ -84,4 +85,4 @@ const kidsshoeProducts = [
     
   ];
   
-  
+  localStorage.setItem("nikekidsdata" , JSON.stringify(kidsshoeProducts));
