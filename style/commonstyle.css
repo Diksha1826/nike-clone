@@ -137,7 +137,7 @@ ul .toplistitem {
 #item22222:hover #box5 {
   display: flex;
 }
-button {
+#sidenavbar2 button {
   margin-right: 10px;
   border-radius: 50%;
   width: 40px;
@@ -339,4 +339,125 @@ color: white;
 }
 .social-link-icon:hover{
   background-color: white;
+}
+
+
+/* joinus page  */
+
+#joinform{
+  width: 23%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#joinform p{
+  margin-bottom: 20px ;
+}
+#joinusmainform{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+#joinusmainform input , select{
+   height: 40px;
+   margin: 10px;
+   color: black;
+   border: 1px solid rgb(223, 221, 221);
+   border-radius: 5px;
+}
+
+#checkbox{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px ;
+}
+#checkbox input{
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+#joinusbold{
+  font-size: 30px;
+  font-weight: 400;  
+  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Staatliches', cursive;
+}
+#joinform #joinussecbold{
+  text-align: center;
+  font-size: 15px;
+  font-family: sans-serif  ;
+}
+
+
+#joinform  input ,select{
+  font-size: 15px ;
+  padding-left: 15px;
+}
+
+
+::placeholder{
+  color: black;
+  opacity: 1;
+}
+
+
+#joinussubmit{
+  background-color: black;
+  color: white;
+  height: 40PX;
+  margin: 20px 0  ;
+}
+#datepara{
+  font-size: 13.5px;
+}
+
+
+/* signin */
+
+
+#signin{
+  width: 25%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+#signin input {
+  width: 100%;
+  height: 40px;
+  margin: 30px 0;
+  border-radius: 5px;
+  border: 2px solid rgb(207, 205, 205);
+  padding-left: 10px;
+}
+#signintoppara{
+  font-size: 23px;
+  margin-bottom: 10px;
+  font-size: 500;
+}
+
+
+#signinformimg{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#signin button{
+   background-color: black;
+   color: white;
+   padding: 10px;
+   width: 150px ;
+   border-radius: 30px;
+   margin-top: 20px;
+   margin-left: 230px ;
 }
