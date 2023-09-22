@@ -100,6 +100,7 @@ ul .toplistitem {
 }
 #item2:hover #box1 {
   display: flex;
+  z-index: 1;  /*this*/
 }
 #item22 {
   padding: 18px 8px;
@@ -109,6 +110,7 @@ ul .toplistitem {
 }
 #item22:hover #box2 {
   display: flex;
+  z-index: 1; 
 }
 #item222 {
   padding: 18px 8px;
@@ -118,6 +120,7 @@ ul .toplistitem {
 }
 #item222:hover #box3 {
   display: flex;
+  z-index: 1; 
 }
 #item2222 {
   padding: 18px 8px;
@@ -127,6 +130,7 @@ ul .toplistitem {
 }
 #item2222:hover #box4 {
   display: flex;
+  z-index: 1; 
 }
 #item22222 {
   padding: 18px 8px;
@@ -136,6 +140,7 @@ ul .toplistitem {
 }
 #item22222:hover #box5 {
   display: flex;
+  z-index: 1; 
 }
 #sidenavbar2 button {
   margin-right: 10px;
@@ -460,4 +465,17 @@ color: white;
    border-radius: 30px;
    margin-top: 20px;
    margin-left: 230px ;
+}
+
+
+/* cart  */
+
+
+#cartcontainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 100px;
+
 }
