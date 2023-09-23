@@ -17,13 +17,17 @@ kidsdata.map(function (elem, index, array) {
   var price = document.createElement("p");
   price.innerText = "₹" +  elem.price;
 
-  var button = document.createElement("button");
-  button.innerText = "add to cart";
-  button.addEventListener("click", function () {
-    Gotocart(elem, index);
-  });
+  // var button = document.createElement("button");
+  // button.innerText = "add to cart";
+  // button.addEventListener("click", function () {
+  //   Gotocart(elem, index);
+  // });
 
-  div.append(image, name, description, price, button);
+  div.append(image, name, description, price );
+
+  div.addEventListener("click" , function(){
+    openinnshoepage(elem);
+  })
 
   document.querySelector("#nikecontainer").append(div);
 });
@@ -41,6 +45,10 @@ function Gotocart(elem, index) {
   if (flag === true) {
     cartarr.push(elem);
   }
-
   localStorage.setItem("mencartarr", JSON.stringify(cartarr));
+}
+
+function openinnshoepage(elem){
+  localStorage.setItem("item" , JSON.stringify(elem));
+  window.location.href = "innerpageofshoe.html";
 }

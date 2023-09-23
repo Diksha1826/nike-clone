@@ -17,14 +17,18 @@ mensdata.map(function(elem , index , array){
     var price = document.createElement("p");
     price.innerText = "₹" + elem.price ;
 
-    var button = document.createElement("button");
-    button.innerText = "add to cart"
+    // var button = document.createElement("button");
+    // button.innerText = "add to cart"
 
-    button.addEventListener("click" , function(){
-        Gotocart(elem,index);
+    // button.addEventListener("click" , function(){
+    //     Gotocart(elem,index);
+    // })
+
+    div.append(image , name , description , price );
+    div.addEventListener("click" , function(){
+        console.log(elem);
+        openinnshoepage(elem);
     })
-
-    div.append(image , name , description , price , button);
 
 
     document.querySelector("#nikecontainer").append(div );
@@ -32,19 +36,24 @@ mensdata.map(function(elem , index , array){
 
 })
 
-function Gotocart(elem,index){
-    elem.qty = 1;
-    var cartarr = JSON.parse(localStorage.getItem("mencartarr")) || [];
+// function Gotocart(elem,index){
+//     elem.qty = 1;
+//     var cartarr = JSON.parse(localStorage.getItem("mencartarr")) || [];
     
-    var flag = true;
-    for(var i=0;i<cartarr.length;i++){
-        if(elem.id === cartarr[i].id){
-            flag = false;
-        }
-    }
-    if(flag === true){
-        cartarr.push(elem);
-    }
+//     var flag = true;
+//     for(var i=0;i<cartarr.length;i++){
+//         if(elem.id === cartarr[i].id){
+//             flag = false;
+//         }
+//     }
+//     if(flag === true){
+//         cartarr.push(elem);
+//     }
 
-    localStorage.setItem("mencartarr" , JSON.stringify(cartarr) );
+//     localStorage.setItem("mencartarr" , JSON.stringify(cartarr) );
+// }
+
+function openinnshoepage(elem){
+    localStorage.setItem("item" ,JSON.stringify(elem));
+    window.location.href = "innerpageofshoe.html";
 }
