@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cart page</title>
-    <!-- <link rel="stylesheet" href="style/indexstyle.css"> -->
+    <title>inner shoe detail</title>
     <link rel="stylesheet" href="style/commonstyle.css">
 </head>
 <body>
@@ -39,8 +38,8 @@
             </div>
           </div>
         </nav>
-      </div>
-      <div id="header2">
+    </div>
+    <div id="header2">
         <nav id="nav2">
           <div id="frontlogo">
             <svg
@@ -401,7 +400,7 @@
                 ></path>
               </svg>
             </div>
-            <div>
+            <div onclick="cartopen()">
               <svg
                 aria-hidden="true"
                 class="pre-nav-design-icon"
@@ -421,29 +420,46 @@
             </div>
           </div>
         </nav>
-      </div>
-
-  <div id="cartmaincontainer">
-    <div id="cartbag">
-      <h2>Bag</h2>
-   
-    <div id="cartcontainer">
+    </div>
     
+    <div id="maininnershoescontainer">
+        <div id="innershoesimage">
+            <div class="innershoesimage1">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/bfc7efea-4b02-48f8-a00a-0318baf12316/sabrina-1-ionic-ep-basketball-shoes-ZK1Xwv.png" alt="shoes image">
+            </div>
+
+        </div>
+        <div id="innershoesdetails">
+            <h2 class="innshoedetailname">Sabrina 1 'Ionic' EP</h2>
+            <p class="innershoesdetaildescription">Basketball Shoes</p>
+            <p class="innershoesdetailprice">MRP : ₹ 10795.0</p>
+            <p class="incltax">incl. of taxes</p>
+            <p class="incltax">(Also includes all applicable duties)</p>
+
+
+            <div id="innshoesizebox">
+            <p>Select Size</p>
+            <div id="innshoesizes">
+                
+                <div><p>US 7</p></div>
+                <div><p>US 8</p></div>
+                <div><p>US 9</p></div>
+                <div><p>US 10</p></div>
+                <div><p>US 11</p></div>
+            </div>
+
+            <button>Add to Bag</button>
+        </div>
+
+
+
+        </div>
 
     </div>
-  </div>
-  <div id="cartsummary">
-    <h2>Summary</h2>
- 
-    <div id="total">
-        
-    </div>
-  </div>
-  </div>
 
-    
+
         
-<div id="footer2">
+    <div id="footer2">
     <div id="footer2upper">
         <div id="footer2upperR">
             <div id="footer2col1">
@@ -507,9 +523,6 @@
     </div>
   
   
-  </div>
-  
-    
+    </div> 
 </body>
-<script src="script/cart.js"></script>
 </html>

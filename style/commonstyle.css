@@ -473,9 +473,127 @@ color: white;
 
 #cartcontainer {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  /* margin: auto; */
+
   margin-bottom: 100px;
 
+}
+#cartcontainer img{
+  width: 250px;
+  height: 250px;
+  margin-right: 30px;
+
+}
+#cartbag{
+  width: 70%;
+  margin-left: 200px ;
+}
+#cartsummary{
+  width: 40%;
+}
+#cartmaincontainer{
+  display: flex;
+  width: 100%;
+}
+.cartinndiv{
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 300px;
+}
+.pricetopdivcart{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+  font-weight: 600;
+}
+
+.pricetopdivcart .cartshoeprice{
+   /* margin-right: 1px; */
+}
+
+.cartshoedetail{
+  width:60%;
+
+}
+
+
+/* inner shoe page  */
+
+#maininnershoescontainer{
+  display: flex;
+  width: 100%;
+  margin-top: 80px;
+  /* justify-content: flex-start; */
+}
+
+#innershoesimage{
+  width: 50%;
+  /* height: 500px;/ */
+  margin-bottom: 50px;
+  
+
+}
+
+#innshoesizebox{
+  margin-top: 80px;
+}
+#innershoesdetails h2{
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 5px;
+}
+#innershoesimage img{
+  width: 70%;
+  margin-left: 160px;
+}
+#innershoesdetails{
+  width: 25%;
+}
+.innershoesdetailprice{
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.incltax{
+  margin-top: 5px;
+}
+
+
+#innershoesdetails button{
+  background-color: black;
+  color: white;
+  height: 60px;
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 20px;
+
+}
+#innershoesdetails button:hover{
+  background: #707072;
+  border: none;
+}
+#innshoesizes{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  gap: 10px;
+
+}
+
+#innshoesizes div{
+  font-size: 17px;
+  text-align: center;
+  border: .5px solid rgb(230, 225, 225);
+  border-radius: 5px;
+
+
+}
+#innshoesizes div:hover{
+  border-color: black;
+}
+#innshoesizes div p{
+  padding: 10px 30px;
 }
