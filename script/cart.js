@@ -1,6 +1,6 @@
 var data = JSON.parse(localStorage.getItem("mencartarr"));
 
-result(data)
+result(data);
 totalcal();
 
 function result(data){
@@ -12,11 +12,9 @@ data.map(function(elem , index , array){
     var cartshoedetails = document.createElement("div");
     cartshoedetails.setAttribute("class" , "cartshoedetail");
 
-
     var image = document.createElement("img");
     image.setAttribute("src" , elem.image[0]);
     image.setAttribute("class" , "nikeimg");
-
 
     var name = document.createElement("p");
     name.innerText = elem.product_name ;
@@ -24,12 +22,32 @@ data.map(function(elem , index , array){
     var description = document.createElement("p");
     description.innerText = elem.product_details ;
 
-    // var quantity = document.createElement("p");
-    // quantity.innerText = "qty-" + elem.qty;
+    var qtyndsize = document.createElement("div");
+    qtyndsize.style.display = "flex";
+    qtyndsize.style.alignItems = "center";
+
+    var qtydiv = document.createElement("div");
+    qtydiv.style.display= "flex";
+    qtydiv.style.alignItems = "center";
+
+    var sizename = document.createElement("p");
+    sizename.innerText = "Size ";
+    sizename.style.marginRight = "5px"
+
+    var size = document.createElement("p");
+    size.innerText = elem.size;
+
+    var sizediv = document.createElement("div");
+    sizediv.style.display = "flex";
+    sizediv.style.marginRight = "30px";
+
+    var quantityname = document.createElement("p");
+    quantityname.innerText = "Quantity"; 
 
     var quantity = document.createElement("select");
+    quantity.style.border = "none";
     var option1 = document.createElement("option");
-    option1.innerText =    elem.qty;
+    option1.innerText = elem.qty ;
     var option2 = document.createElement("option");
     option2.innerText = 2;
     var option3 = document.createElement("option");
@@ -50,26 +68,16 @@ data.map(function(elem , index , array){
     option10.innerText = 10;
 
     quantity.addEventListener("change" , function(){
+        console.log(quantity.value);
         quantitychange(quantity , elem)
     })
 
     quantity.append(option1 , option2 , option3 , option4 , option5 , option6 , option7 , option8 , option9 , option10)
 
+    qtydiv.append(quantityname , quantity);
+    sizediv.append(sizename , size);
 
-
-    // var incqty = document.createElement("button");
-    // incqty.innerText = "Qty++";
-    // incqty.addEventListener("click" , function(){
-    //     increaseqty(elem);
-
-    // })
-
-    // var decqty = document.createElement("button");
-    // decqty.innerText = "Qty--";
-    // decqty.addEventListener("click" , function(){
-    //     decreaseqty(elem);
-
-    // })
+    qtyndsize.append(sizediv , qtydiv);
 
     var price = document.createElement("p");
     price.setAttribute("class" , "cartshoeprice")
@@ -78,41 +86,17 @@ data.map(function(elem , index , array){
     var pricetopdiv = document.createElement("div");
     pricetopdiv.setAttribute("class" , "pricetopdivcart");
 
-
     pricetopdiv.append( name , price);
 
-
-    cartshoedetails.append(pricetopdiv ,description, quantity );
+    cartshoedetails.append(pricetopdiv ,description, qtyndsize );
 
     div.append(image , cartshoedetails);
-
 
     document.querySelector("#cartcontainer").append(div);
 
 
 });
 };
-
-
-// function increaseqty(elem){
-//      elem.qty++;
-//      result(data);
-//      totalcal();
-// }
-
-// function decreaseqty(elem){
-//     elem.qty--;
-//     if(elem.qty<=0){
-//         elem.qty++;
-//         alert("invalid qty");
-//         return;
-//     }
-//     result(data);
-//     totalcal();
-// }
-
-
-
 
 function totalcal(){
     document.querySelector("#total").innerText = "";
@@ -125,5 +109,11 @@ document.querySelector("#total").append(total);
 }
 function quantitychange(quantity , elem){
     elem.qty = quantity.value;
+    localStorage.setItem("mencartarr" , JSON.stringify(data));
+    result(data);
     totalcal();
 }
+
+
+
+

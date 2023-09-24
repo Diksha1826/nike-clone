@@ -6,7 +6,6 @@ document.querySelector(".innshoedetailname").innerHTML = item.product_name ;
  
 document.querySelector(".innershoesdetaildescription").innerHTML = item.product_details ;
 
-
 document.querySelector(".innershoesdetailprice").innerHTML = "₹ " + item.price ;
 
 item.sizes.map(function(elem){
@@ -17,15 +16,34 @@ item.sizes.map(function(elem){
     div1.append(para1) ;
     document.querySelector("#innshoesizes").append(div1);
 
+    div1.addEventListener("click" , function(){
+        sizetocart(elem);
+    })
+
 })
 
-document.querySelector("#innershoesdetailsbtn").addEventListener("click" , function(){
-         Gotocart(item);
-     })
+
+function sizetocart(elem){
+    item.size = elem ;
+    localStorage.setItem("item",JSON.stringify(item));
+        
+     } 
+     
+     document.querySelector("#innershoesdetailsbtn").addEventListener("click" , function(){
+        if(item.size != undefined){
+            Gotocart(item);
+        }
+        else{
+            alert("choose shoe size");
+        }
+     }) 
+ 
+
+
+
 
      
 function Gotocart(item){
-    console.log(item);
     item.qty = 1;
     var cartarr = JSON.parse(localStorage.getItem("mencartarr")) || [];
     
@@ -43,4 +61,5 @@ function Gotocart(item){
 
      
      }
+
 
