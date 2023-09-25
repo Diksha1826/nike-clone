@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check out</title>
+    <link rel="stylesheet" href="style/commonstyle.css">
+</head>
+<body>
+    <nav id="navcheckout">
+        <div id="frontlogocheckout">
+          <svg
+            aria-hidden="true"
+            class="pre-logo-svg"
+            focusable="false"
+            viewBox="0 0 24 24"
+            role="img"
+            width="80px"
+            height="80px"
+            fill="none"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </div>
+    </nav>  
+
+    <div id="checkoutmain">
+        <div id="checkoutdetails">
+            <div id="widthkum">
+            <h3 id="toph3">How would you like to get your order</h3>
+            <div id="deliverit">Deliver It</div>
+
+            <h3 id="secondtoph3">Enter your name and address:</h3>
+            <form id="checkoutform" action="">
+                <input type="text" class="samepxgap" placeholder="First Name" />
+                <input type="text" class="samepxgap" placeholder="Last Name" />
+                <input type="text" placeholder="Address Line 1" />
+                <p class="smallparacheckout">We do not ship yo P.O. boxes</p>
+                <input type="text" class="samepxgap" placeholder="Address Line 2" />
+                <input type="text" class="samepxgap" placeholder="Address Line 3" />
+                <div class="formflexcheckout" class="samepxgap">
+                    <input type="text" id="postal" placeholder="Postal Code">
+                    <input type="text" id="" placeholder="locality">
+                </div>
+                <div class="formflexcheckout" class="samepxgap">
+                    <select name="" id="country">
+                        <option value=""> State/Territory</option>
+                        <option value="">Andra Pradesh</option>
+                        <option value="">Arunanchal Pradesh</option>
+                        <option value="">Bihar</option>
+                        <option value="">Chattisgarh</option>
+                        <option value="">Goa</option>
+                        <option value="">Haryana</option>
+                        <option value="">Himachal Pradesh</option>
+                        <option value="">Jharkhand</option>
+                        <option value="">Karnataka</option>
+                        <option value="">Maharshtra</option>
+                        <option value="">nagaland</option>
+                        <option value="">Odisha</option>
+                        <option value="">Punjab</option>
+                        <option value="">Rajasthan</option>
+                        <option value="">Sikkim</option>
+                        <option value="">Tripura</option>
+                        <option value="">Uttrakhand</option>
+                        <option value="">West Bengal</option>
+                    </select>
+                    <p id="india">India</p>
+                </div>
+                <div class="checkboxflex checkboxstraight" >
+                <input type="checkbox" id="checkboxCO" class="samepxgap">
+                <label for="">Save this address to my profile</label>
+                </div>
+                <div class="checkboxflex checkboxstraight">
+                <input type="checkbox" id="checkboxCOnext" class="samepxgap">
+                <label for="">make this my preferred address</label>
+                </div>
+
+                <h3 class="samepxgap" id="thirdtoph3">What's your contact information?</h3>
+                <input type="email" id="" placeholder="Email"  />
+                <p class="smallparacheckout">A confirmation email will be sent after checkout.</p>
+                <input type="number" placeholder="Phone Number">
+                <p class="smallparacheckout">A carrier might contact you to confirm delivery.</p>
+
+                <h3 id="fourthtoph3">What's your PAN?</h3>
+                <input type="number" placeholder="PAN" />
+                <p class="smallparacheckout">Enter your PAN to enable payment with UPI, Net Banking or local card methods</p>
+
+                <div class="checkboxflex" id="panid">
+                <input type="checkbox" id="checkboxnextn">
+                <label for="">Save PAN details to Nike Profile</label>
+                </div>
+                <div class="checkboxflex" id="lastndfinal">
+                <input type="checkbox" id="checkboxnextnn">
+                <label for="">I have read and consent to eShopWorld processing my information in accordance with the <a href="">Privacy Statement</a> and <a href="">Cookie Policy</a>. eShopWorld is a trusted Nike partner.</label>
+                </div>
+                <select name="" id="" >
+                    <option value="">--payment method</option>
+                    <option value="Cash on delivery">Cash on delivery</option>
+                </select>
+                <button type="submit" id="checkoutbutton">Continue</button>
+
+
+
+
+
+            </form>
+        </div>
+        </div>
+        <div id="checkoutbilldetail">
+            <div id="checkoutbillinndiv">
+            <h2>Order Summary</h2>
+            <h3 id="checkouttotal"></h3>
+            <hr>
+            <div id="checkoutshoes">
+                <!-- //mapping of shoes items -->
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="script/checkout.js"></script>
+</html>

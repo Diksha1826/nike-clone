@@ -47,7 +47,9 @@ data.map(function(elem , index , array){
     var quantity = document.createElement("select");
     quantity.style.border = "none";
     var option1 = document.createElement("option");
-    option1.innerText = elem.qty ;
+    option1.innerText = elem.qty;
+    var option101 = document.createElement("option");
+    option101.innerText = 1;
     var option2 = document.createElement("option");
     option2.innerText = 2;
     var option3 = document.createElement("option");
@@ -68,11 +70,11 @@ data.map(function(elem , index , array){
     option10.innerText = 10;
 
     quantity.addEventListener("change" , function(){
-        console.log(quantity.value);
-        quantitychange(quantity , elem)
+        // console.log(quantity.value);
+        quantitychange(quantity , elem);
     })
 
-    quantity.append(option1 , option2 , option3 , option4 , option5 , option6 , option7 , option8 , option9 , option10)
+    quantity.append(option1 ,option101, option2 , option3 , option4 , option5 , option6 , option7 , option8 , option9 , option10)
 
     qtydiv.append(quantityname , quantity);
     sizediv.append(sizename , size);
@@ -106,6 +108,7 @@ var res = data.reduce(function(acc, elem){
 },0);
 total.innerText = "Total " +   " ₹" + res;
 document.querySelector("#total").append(total);
+localStorage.setItem("totalbill" , res);
 }
 function quantitychange(quantity , elem){
     elem.qty = quantity.value;
