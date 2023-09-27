@@ -37,9 +37,9 @@
 
             <h3 id="secondtoph3">Enter your name and address:</h3>
             <form id="checkoutform" action="">
-                <input type="text" class="samepxgap" placeholder="First Name" />
+                <input type="text" class="samepxgap" placeholder="First Name" id="personname" required />
                 <input type="text" class="samepxgap" placeholder="Last Name" />
-                <input type="text" placeholder="Address Line 1" />
+                <input type="text" placeholder="Address Line 1" required />
                 <p class="smallparacheckout">We do not ship yo P.O. boxes</p>
                 <input type="text" class="samepxgap" placeholder="Address Line 2" />
                 <input type="text" class="samepxgap" placeholder="Address Line 3" />
@@ -48,7 +48,7 @@
                     <input type="text" id="" placeholder="locality">
                 </div>
                 <div class="formflexcheckout" class="samepxgap">
-                    <select name="" id="country">
+                    <select name="" id="country" required>
                         <option value=""> State/Territory</option>
                         <option value="">Andra Pradesh</option>
                         <option value="">Arunanchal Pradesh</option>
@@ -81,9 +81,9 @@
                 </div>
 
                 <h3 class="samepxgap" id="thirdtoph3">What's your contact information?</h3>
-                <input type="email" id="" placeholder="Email"  />
+                <input type="email" id="" placeholder="Email" required />
                 <p class="smallparacheckout">A confirmation email will be sent after checkout.</p>
-                <input type="number" placeholder="Phone Number">
+                <input type="number" placeholder="Phone Number" required>
                 <p class="smallparacheckout">A carrier might contact you to confirm delivery.</p>
 
                 <h3 id="fourthtoph3">What's your PAN?</h3>
@@ -95,12 +95,12 @@
                 <label for="">Save PAN details to Nike Profile</label>
                 </div>
                 <div class="checkboxflex" id="lastndfinal">
-                <input type="checkbox" id="checkboxnextnn">
+                <input type="checkbox" id="checkboxnextnn" required>
                 <label for="">I have read and consent to eShopWorld processing my information in accordance with the <a href="">Privacy Statement</a> and <a href="">Cookie Policy</a>. eShopWorld is a trusted Nike partner.</label>
                 </div>
                 <select name="" id="" >
                     <option value="">--payment method</option>
-                    <option value="Cash on delivery">Cash on delivery</option>
+                    <option value="Cash on delivery" required>Cash on delivery</option>
                 </select>
                 <button type="submit" id="checkoutbutton">Continue</button>
 
@@ -121,6 +121,21 @@
             </div>
         </div>
         </div>
+    </div>
+    <div class="checkoutfooter" id="footer2lower">
+        <div id="footerlowerR">
+            <svg class="white"  aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="18px" height="15px" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M4.5 9.001a7.5 7.5 0 1115 0c0 1.205-.385 2.576-.934 3.928-.555 1.364-1.302 2.767-2.08 4.055a39.918 39.918 0 01-2.307 3.405c-.688.905-1.316 1.632-1.711 1.947a.75.75 0 01-.936 0c-.395-.315-1.023-1.042-1.711-1.947a39.916 39.916 0 01-2.306-3.405c-.78-1.288-1.526-2.691-2.08-4.056-.55-1.351-.935-2.722-.935-3.927zM12 12.25a3.25 3.25 0 100-6.5 3.25 3.25 0 000 6.5z" clip-rule="evenodd"></path></svg>
+            <p class="white">India</p>
+            <p>2023 Nike, Inc.All Rights Reserved</p>
+        </div>
+        <div id="footerlowerL">
+            <p>Guides</p>
+            <p>Terms of Sale</p>
+            <p>Terms of Use</p>
+            <p>Nike Privacy Policy</p>
+            
+        </div>
+  
     </div>
 </body>
 <script src="script/checkout.js"></script>

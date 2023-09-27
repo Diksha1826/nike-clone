@@ -40,3 +40,13 @@ data.map(function(elem){
 
 
 })
+
+document.querySelector("#checkoutform").addEventListener("submit" , gotoplacedorder);
+
+function gotoplacedorder(e){
+    e.preventDefault();
+    var name = document.querySelector("#personname").value;
+    localStorage.setItem("orderplacedname" , JSON.stringify(name));
+    window.location.href = "placedorder.html"
+
+}

@@ -90,7 +90,19 @@ data.map(function(elem , index , array){
 
     pricetopdiv.append( name , price);
 
-    cartshoedetails.append(pricetopdiv ,description, qtyndsize );
+    var remove = document.createElement("button");
+    remove.innerText = "Remove Item";
+    remove.style.width = "25%";
+    remove.style.backgroundColor = "black";
+    remove.style.color = "white";
+    remove.style.borderRadius = "30px";
+
+
+    remove.addEventListener("click" , function(){
+        removeitem(elem);
+    })
+
+    cartshoedetails.append(pricetopdiv ,description, qtyndsize , remove);
 
     div.append(image , cartshoedetails);
 
@@ -117,6 +129,22 @@ function quantitychange(quantity , elem){
     totalcal();
 }
 
+document.querySelector("#cartcheckoutbutton").addEventListener("click" , function(){
+    gotocheckout();
+})
 
+function gotocheckout(){
+    window.location.href= "checkout.html";
+}
 
+function removeitem(elem){
+    for(var i=0 ; i<data.length ; i++){
+        if(data[i].id == elem.id){
+            data.splice(i , 1);
+        }
+    }
+    localStorage.setItem("mencartarr" , JSON.stringify(data));
+    result(data);
+    totalcal()
+}
 
