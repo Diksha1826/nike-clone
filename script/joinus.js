@@ -32,7 +32,6 @@ if(email === joinemailarr[0]){
 }
 else{
     alert("enter correct email");
+} 
 }
- 
- }
 

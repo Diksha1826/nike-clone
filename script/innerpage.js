@@ -58,8 +58,6 @@ function Gotocart(item){
     }
 
     localStorage.setItem("mencartarr" , JSON.stringify(cartarr) );
-
-     
-     }
+}
 
 

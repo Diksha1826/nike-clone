@@ -5,7 +5,7 @@ totalcal();
 
 function result(data){
     document.querySelector("#cartcontainer").innerHTML = ""
-data.map(function(elem , index , array){
+   data.map(function(elem , index , array){
     var div = document.createElement("div");
     div.setAttribute("class" , "cartinndiv");
 

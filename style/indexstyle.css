@@ -1,664 +1,1402 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
 }
-#nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: #f5f5f5;
-    height: 35px;
+#nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  height: 35px;
 }
-#frontnav{
-    padding: 7px 60px;
+#frontnav {
+  padding: 7px 60px;
 }
-#sidenav{
-    width: 23%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+#sidenav {
+  width: 23%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.item{
-    display: flex;
-    padding: 7px 0px;
-    font-size: 12px;
+.item {
+  display: flex;
+  padding: 7px 0px;
+  font-size: 12px;
 }
-.item >div{
-    margin-right: 15px;
-    
+.item > div {
+  margin-right: 15px;
 }
-#header2{
-    position: relative;
-    /* width: 100%; */
+#header2 {
+  position: relative;
+  /* width: 100%; */
 }
-#nav2{
-    height: 60px;
-    display: flex;
-   justify-content: space-between;
-   align-items: center;
-    /* border: 2px solid red; */
+#nav2 {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
 }
-#frontlogo{
-    margin-left: 30px;
+#frontlogo {
+  margin-left: 30px;
 }
-#midnavbar{
-    width: 33%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin-left: 12rem ;
+#midnavbar {
+  width: 33%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-left: 12rem;
 }
-#sidenavbar2{
-    width: 20%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+#sidenavbar2 {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-#search{
-    width: 1.8in;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #f5f5f5;
-    text-align: center;
-    position: relative;
-    border: none;
+#search {
+  width: 1.8in;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+  position: relative;
+  border: none;
 }
-.inndiv2{
-    margin-top: 21px;
-    padding: 30px 200px 40px 150px;
-    width: 100%;
-    /* height: 70vh; */
-    display: none;
-    justify-content: space-evenly;
-    position: absolute;
-    background-color: white;
-    box-sizing: border-box;
-    left: 0;
+.inndiv2 {
+  margin-top: 21px;
+  padding: 30px 200px 40px 150px;
+  width: 100%;
+  /* height: 70vh; */
+  display: none;
+  justify-content: space-evenly;
+  position: absolute;
+  background-color: white;
+  box-sizing: border-box;
+  left: 0;
 }
-.list li{
-    list-style: none;
-    font-size: 14px;
-    margin: 10px;
-    color: #757575;
+.list li {
+  list-style: none;
+  font-size: 14px;
+  margin: 10px;
+  color: #757575;
 }
-.list li:hover{
-    color: black;
+.list li:hover {
+  color: black;
 }
-ul .toplistitem{
-    font-size: 17px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    color: black;
+ul .toplistitem {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: black;
 }
-#item2{
-    padding: 18px 8px;
-    /* border-bottom: 2px solid black; */
-
+#item2 {
+  padding: 18px 8px;
+  /* border-bottom: 2px solid black; */
 }
-#item2:hover{
-    border-bottom: 2px solid black;
+#item2:hover {
+  border-bottom: 2px solid black;
 }
-#item2:hover #box1{
-    display: flex;   
+#item2:hover #box1 {
+  display: flex;
 }
-#item22{
-    padding: 18px 8px;
+#item22 {
+  padding: 18px 8px;
 }
-#item22:hover{
-    border-bottom: 2px solid black;
+#item22:hover {
+  border-bottom: 2px solid black;
 }
-#item22:hover #box2{
-    display: flex;
+#item22:hover #box2 {
+  display: flex;
 }
-#item222{
-    padding: 18px 8px;
+#item222 {
+  padding: 18px 8px;
 }
-#item222:hover{
-    border-bottom: 2px solid black;
+#item222:hover {
+  border-bottom: 2px solid black;
 }
-#item222:hover #box3{
-    display: flex;
+#item222:hover #box3 {
+  display: flex;
 }
-#item2222{
-    padding: 18px 8px;
+#item2222 {
+  padding: 18px 8px;
 }
-#item2222:hover{
-    border-bottom: 2px solid black;
+#item2222:hover {
+  border-bottom: 2px solid black;
 }
-#item2222:hover #box4{
-    display: flex;
+#item2222:hover #box4 {
+  display: flex;
 }
-#item22222{
-    padding: 18px 8px;
+#item22222 {
+  padding: 18px 8px;
 }
-#item22222:hover{
-    border-bottom: 2px solid black;
+#item22222:hover {
+  border-bottom: 2px solid black;
 }
-#item22222:hover #box5{
-    display: flex;
+#item22222:hover #box5 {
+  display: flex;
 }
-button{
-    margin-right: 10px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    z-index: 1;
-    border: none;
-    background-color: #f5f5f5;
+button {
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  background-color: #f5f5f5;
 }
 /* #button:hover{
     background-color: rgb(133, 133, 133);
 } */
-#search:hover{
-    background-color:  rgb(230, 229, 229);
+#search:hover {
+  background-color: rgb(230, 229, 229);
 }
 
-#nav3{
-    background-color: #f5f5f5;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#nav3 {
+  background-color: #f5f5f5;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.noflex{
-    display: flex;
-    flex-direction: column;
+.noflex {
+  display: flex;
+  flex-direction: column;
 }
-.noflex .colgap{
-    margin-top: 25px;
+.noflex .colgap {
+  margin-top: 25px;
 }
-#centertext{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* transform: translateX(-100%); */
-
+#centertext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* transform: translateX(-100%); */
 }
-.small{
-    font-size: 12px; 
-    margin-top: 10px;
-    text-decoration: underline ;
+.small {
+  font-size: 12px;
+  margin-top: 10px;
+  text-decoration: underline;
 }
-#body{
-    margin: 0 47px;
+#body {
+  margin: 0 47px;
 }
-#img img{
-   width: 100%;
-   height: 100%;
+#img img {
+  width: 100%;
+  height: 100%;
 }
-#home{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    /* height: 30vh; */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  /* height: 30vh; */
 }
-#home h1{
-    font-size: 85px;
-    font-weight: 900;
-    font-family: 'Archivo Black', sans-serif;
-    font-family: 'Bebas Neue', sans-serif;
-    font-family: 'Staatliches', cursive;
-    color: #111;
-    margin-bottom: 20px;
-    /* font-family: "Nike Futura","Helvetica Neue",Helvetica,Arial,sans-serif; */
-} 
+#home h1 {
+  font-size: 85px;
+  font-weight: 900;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Staatliches", cursive;
+  color: #111;
+  margin-bottom: 20px;
+  /* font-family: "Nike Futura","Helvetica Neue",Helvetica,Arial,sans-serif; */
+}
 #home p {
-      margin-bottom: 50px;
- }
- #home input{
-    background-color: #111;
-    color: white;
-    padding: 8px 20px;
-    border: .5px solid #111;
-    border-radius: 17px;
-    font-size: 16px;
- }
- #home input:hover{
-    opacity: .6;
+  margin-bottom: 50px;
 }
-#product{
-    margin-top: 70px;
+#home input {
+  background-color: #111;
+  color: white;
+  padding: 8px 20px;
+  border: 0.5px solid #111;
+  border-radius: 17px;
+  font-size: 16px;
+}
+#home input:hover {
+  opacity: 0.6;
+}
+#product {
+  margin-top: 70px;
 }
 
- #product>p{
-    font-size: 25px;
- }
- #prdthead{
-    margin-top: 35px;
-    display: flex;
-    gap: 20px;
- }
- #product .prdt{
-    width: 49%;
-    height: 690px;
-    /* border: 2px solid black; */
- }
- #prdt1{
-    background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_706,c_limit/40d5df93-9a52-4d89-a585-fb52e9445ba6/nike-just-do-it.png") no-repeat center center/cover;
-    /* padding-top: 500px;
+#product > p {
+  font-size: 25px;
+}
+#prdthead {
+  margin-top: 35px;
+  display: flex;
+  gap: 20px;
+}
+#product .prdt {
+  width: 49%;
+  height: 690px;
+  /* border: 2px solid black; */
+}
+#prdt1 {
+  background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_706,c_limit/40d5df93-9a52-4d89-a585-fb52e9445ba6/nike-just-do-it.png")
+    no-repeat center center/cover;
+  /* padding-top: 500px;
     padding-left: 40px; */
- }
- .prdt{
-    padding-top: 500px;
-    padding-left: 40px;
- }
- #prdt1 p{
-    margin: 10px;
- }
- #prdthead input{
-    background-color: #111;
-    color: white;
-    padding: 8px 20px;
-    border: .5px solid #111;
-    border-radius: 17px;
-    font-size: 16px;
-    margin-left: 10px;
-    margin-top: 20px;
- }
- #prdthead input:hover{
-    opacity: .6;
 }
- #prdt2{
+.prdt {
+  padding-top: 500px;
+  padding-left: 40px;
+}
+#prdt1 p {
+  margin: 10px;
+}
+#prdthead input {
+  background-color: #111;
+  color: white;
+  padding: 8px 20px;
+  border: 0.5px solid #111;
+  border-radius: 17px;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+#prdthead input:hover {
+  opacity: 0.6;
+}
+#prdt2 {
+  position: relative;
+}
+video {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 690px;
+}
+
+.bold {
+  font-size: 25px;
+}
+#trendinghead {
+  margin-top: 80px;
+}
+#trendinghead > p {
+  font-size: 25px;
+}
+#trendinghead .prdt {
+  width: 49%;
+  height: 690px;
+  /* border: 2px solid black; */
+}
+#trendinghead input {
+  background-color: white;
+  color: #111;
+  padding: 8px 20px;
+  /* border: .5px solid #111; */
+  border: none;
+  border-radius: 17px;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+#trendinghead input:hover {
+  background-color: #d9d5d5;
+}
+#trending {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+#trending p {
+  color: white;
+}
+.trend {
+  padding-top: 550px;
+  padding-left: 40px;
+}
+
+#trending1 {
+  background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_706,c_limit/32cccbda-5f11-4753-bd68-47db90ffc679/nike-just-do-it.png")
+    no-repeat center center/cover;
+}
+#trending2 {
+  background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_706,c_limit/829a4807-bc59-4c10-95eb-900361666ab4/nike-just-do-it.png")
+    no-repeat center center/cover;
+}
+#justin {
+  margin-top: 80px;
+}
+#justinimg {
+  margin-top: 30px;
+}
+#justinimg img {
+  width: 100%;
+}
+
+#justin > p {
+  font-size: 25px;
+}
+
+#easy {
+  margin-top: 40px;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+#easy h1 {
+  font-weight: 900;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Staatliches", cursive;
+  font-size: 90px;
+}
+#easy p {
+  margin-top: 10px;
+  font-size: 17px;
+}
+#easy input {
+  background-color: #111;
+  color: white;
+  padding: 8px 20px;
+  border: 0.5px solid #111;
+  border-radius: 17px;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+#easy input:hover {
+  opacity: 0.6;
+}
+
+#featuredhead {
+  margin-top: 80px;
+}
+#featuredhead > p {
+  font-size: 25px;
+}
+#featuredhead .prdt {
+  width: 49%;
+  height: 690px;
+  /* border: 2px solid black; */
+}
+#featuredhead input {
+  background-color: #111;
+  color: white;
+  padding: 8px 20px;
+  /* border: .5px solid #111; */
+  border: none;
+  border-radius: 17px;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+#featuredhead input:hover {
+  opacity: 0.6;
+}
+#featured {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+#featured p {
+  color: #111;
+}
+.featur {
+  padding-top: 520px;
+  padding-left: 40px;
+}
+
+#featured1 {
+  background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_706,c_limit/657d487a-71c9-4b92-a883-724708868848/nike-just-do-it.png")
+    no-repeat center center/cover;
+  padding-top: 555px;
+}
+#featured2 {
+  background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_706,c_limit/d5062dbc-5dfb-46b9-b463-44339085123f/nike-just-do-it.png")
+    no-repeat center center/cover;
+}
+#small {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+#dontmiss {
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+#dontmiss p {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+#dontmissimg img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#written {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#written h1 {
+  font-weight: 900;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Staatliches", cursive;
+  font-size: 90px;
+}
+#written p {
+  font-size: 18px;
+  margin-top: 17px;
+}
+#written input {
+  background-color: #111;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 17px;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+#written input:hover {
+  opacity: 0.6;
+}
+#Essential {
+  margin-bottom: 100px;
+}
+#Essential p {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+#essentialprdt {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 70vh;
+}
+#essentialprdt div {
+  width: 32.7%;
+  height: 100%;
+}
+
+#essentialprdt input {
+  background-color: white;
+  color: #111;
+  padding: 8px 20px;
+  /* border: .5px solid #111; */
+  border: none;
+  border-radius: 17px;
+  font-size: 16px;
+  margin-left: 55px;
+  margin-top: 440px;
+}
+#essentialprdt input:hover {
+  background-color: #d9d5d5;
+}
+#men {
+  background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_540,c_limit/d94bfa7e-9357-406a-a124-1940712dfa0b/nike-just-do-it.png")
+    no-repeat center center/cover;
+}
+#women {
+  background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_540,c_limit/dc62b322-5c3f-4508-b21c-950683ed460f/nike-just-do-it.png")
+    no-repeat center center/cover;
+}
+#kid {
+  background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_540,c_limit/58359474-a0de-4329-959c-55d1652d0912/nike-just-do-it.png")
+    no-repeat center center/cover;
+}
+
+#footer1 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 35vh;
+  position: relative;
+}
+#footer1 li {
+  list-style: none;
+  font-size: 16px;
+  margin: 10px 10px 15px 10px;
+  color: #757575;
+}
+#footer1 li:hover {
+  color: #111;
+}
+#footer1 .hidden li {
+  list-style: none;
+  font-size: 16px;
+  margin: 9px;
+  color: #757575;
+}
+#footer1 .hidden .hidden1 {
+  margin-top: 0px;
+}
+#footer1 .hidden {
+  margin-left: 1px;
+  display: none;
+  position: absolute;
+}
+#footer1 .hidden li:hover {
+  color: #111;
+}
+#footer1:hover {
+  height: 60vh;
+}
+#footer1:hover .hidden {
+  display: flex;
+  flex-direction: column;
+}
+#footer1 .black {
+  margin-bottom: 40px;
+  color: black;
+}
+
+#footer2 {
+  width: 100%;
+  height: 50vh;
+  background-color: #111;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#footer2upper {
+  display: flex;
+  justify-content: space-between;
+}
+#footer2upperR {
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  margin-top: 30px;
+
+  position: absolute;
+  width: 50%;
+  height: 90%;
+}
+#footer2upperL {
+  /* width: 30%; */
+  position: absolute;
+  top: 50px;
+  left: 1250px;
+}
+#footer2upperL div svg {
+  margin: 7px;
+}
+#footer2upperL div {
+  margin-right: 50px;
+}
+#footer2upperR li {
+  list-style: none;
+  margin: 18px;
+  color: #757575;
+  font-size: 12px;
+}
+#footer2upperR li:hover {
+  color: white;
+}
+#footer2upperR .white {
+  color: white;
+}
+#footer2lower {
+  display: flex;
+  justify-content: space-between;
+}
+#footerlowerR {
+  margin: 10px 10px 10px 50px;
+  display: flex;
+  width: 300px;
+  /* justify-content: space-evenly; */
+  font-size: 13px;
+  color: #757575;
+}
+#footerlowerR p {
+  margin-left: 30px;
+}
+#footerlowerR .white {
+  margin-left: 5px;
+}
+#footerlowerL {
+  margin: 10px 50px 10px 10px;
+  display: flex;
+  width: 450px;
+  font-size: 12px;
+  color: #757575;
+  justify-content: space-evenly;
+}
+#footerlowerL p:hover {
+  color: white;
+}
+#footerlowerR .white {
+  color: white;
+}
+
+.social-link-icon {
+  background-color: #7e7e7e;
+  border-radius: 55%;
+  border: none;
+}
+.social-link-icon:hover {
+  background-color: white;
+}
+
+/* // responsive */
+
+@media screen and (min-width: 2200px) {
+  #nav {
+    height: 45px;
+  }
+  #frontnav {
+    padding: 8px 53px;
+  }
+  .item {
+    font-size: 25px;
+  }
+  #midnavbar {
+    font-size: 27px;
+  }
+  #search {
+    width: 3.8in;
+  }
+  #sidenavbar2 {
+    width: 24%;
+  }
+  #centertext {
+    font-size: 23px;
+  }
+  #home p {
+    font-size: 30px;
+  }
+  #prdthead input {
     position: relative;
-
- }
- video{
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 690px;
-
- }
-
- .bold{
+    z-index: 2;
+  }
+  #product .prdt {
+    background-color: #6fd3d6;
+  }
+  #product > p {
+    font-size: 40px;
+  }
+  #trendinghead > p {
+    font-size: 40px;
+  }
+  #prdthead input {
+    font-size: 26px;
+  }
+  .bold {
+    font-size: 35px;
+  }
+  #trendinghead input {
+    font-size: 26px;
+  }
+  #justin > p {
+    font-size: 40px;
+  }
+  #easy p {
+    font-size: 30px;
+  }
+  #easy input {
+    font-size: 26px;
+  }
+  #home input {
+    font-size: 26px;
+  }
+  #featuredhead > p {
+    font-size: 40px;
+  }
+  #featuredhead input {
+    font-size: 26px;
+  }
+  #small {
     font-size: 25px;
- }
- #trendinghead{
-    margin-top: 80px;
- }
- #trendinghead>p{
-    font-size: 25px;
- }
- #trendinghead .prdt{
-    width: 49%;
-    height: 690px;
-    /* border: 2px solid black; */
- }
- #trendinghead input{
-        background-color:white ;
-        color:#111;
-        padding: 8px 20px;
-        /* border: .5px solid #111; */
-        border: none;
-        border-radius: 17px;
-        font-size: 16px;
-        margin-left: 10px;
-        margin-top: 30px
- }
- #trendinghead input:hover{
-   background-color: #d9d5d5 ;
+  }
+  #dontmiss p {
+    font-size: 40px;
+  }
+  #written p {
+    font-size: 28px;
+  }
+  #written input {
+    font-size: 26px;
+  }
+  #Essential p {
+    font-size: 40px;
+  }
+  #essentialprdt input {
+    font-size: 26px;
+    margin-top: 774px;
+  }
+  #footer1 li {
+    font-size: 26px;
+  }
+  #footer2upperL {
+    left: 2856px;
+  }
+  #footer2upperR li {
+    font-size: 20px;
+  }
+  #footerlowerR {
+    width: 491px;
+    font-size: 24px;
+  }
+  #footerlowerL {
+    width: 611px;
+    font-size: 20px;
+  }
+  #footer2 {
+    height: 34vh;
+  }
 }
- #trending{
-    margin-top: 30px;
-    display: flex;
-    gap: 20px;
- }
- #trending p{
-    color: white;
- }
- .trend{
+
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+  #sidenav {
+    width: 33%;
+  }
+  #footer2upperL {
+    left: 700px;
+  }
+  #midnavbar {
+    font-size: 13px;
+    width: 40%;
+    margin-left: 6rem;
+  }
+  #search {
+    width: 1.3in;
+  }
+  #product .prdt {
+    background-color: #6fd3d6;
+  }
+  video {
+    z-index: 1;
+    height: 680px;
+  }
+  #prdthead input {
+    position: relative;
+    z-index: 2;
+  }
+  .bold {
+    position: relative;
+    z-index: 2;
+  }
+  #footer1:hover {
+    height: 66vh;
+  }
+  #prdt2 {
     padding-top: 550px;
-    padding-left: 40px;
- }
-
- #trending1{
-      background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_706,c_limit/32cccbda-5f11-4753-bd68-47db90ffc679/nike-just-do-it.png") no-repeat center center/cover;
-
- }
- #trending2{
-    background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_706,c_limit/829a4807-bc59-4c10-95eb-900361666ab4/nike-just-do-it.png") no-repeat center center/cover;
- }
- #justin{
-    margin-top: 80px;
- }
- #justinimg{
-    margin-top: 30px;
- }
- #justinimg img{
-    width: 100%;
- }
-
- #justin>p{
-    font-size: 25px;
- }
-
- #easy{
-    margin-top: 40px;
-    height: 200px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  }
+  #written {
+    height: 44vh;
     margin-bottom: 70px;
- }
-#easy h1{
-    font-weight: 900;
-    font-family: 'Archivo Black', sans-serif;
-    font-family: 'Bebas Neue', sans-serif;
-    font-family: 'Staatliches', cursive;
-    font-size: 90px;
-}
-#easy p{
-    margin-top: 10px;
-    font-size: 17px;
-}
- #easy input{
-    background-color: #111;
-    color: white;
-    padding: 8px 20px;
-    border: .5px solid #111;
-    border-radius: 17px;
-    font-size: 16px;
-    margin-left: 10px;
-    margin-top: 30px; 
- }
- #easy input:hover{
-    opacity: .6;
+  }
+  #essentialprdt input {
+    margin-left: 23px;
+    margin-top: 278px;
+  }
+  #footer1 {
+    height: 36vh;
+  }
+  #footer2 {
+    height: 54vh;
+  }
+
+  #essentialprdt div {
+    height: 360px;
+  }
+  #essentialprdt {
+    height: 41vh;
+  }
+  #Essential {
+    margin-bottom: 44px;
+  }
+  #dontmissimg img {
+    height: 68vh;
+  }
 }
 
- #featuredhead{
-    margin-top: 80px;
- }
- #featuredhead>p{
-    font-size: 25px;
- }
- #featuredhead .prdt{
-    width: 49%;
-    height: 690px;
-    /* border: 2px solid black; */
- }
- #featuredhead input{
-        background-color:#111 ;
-        color:white;
-        padding: 8px 20px;
-        /* border: .5px solid #111; */
-        border: none;
-        border-radius: 17px;
-        font-size: 16px;
-        margin-left: 10px;
-        margin-top: 30px
- }
- #featuredhead input:hover{
-    opacity: .6;
-}
- #featured{
-    margin-top: 30px;
-    display: flex;
-    gap: 20px;
- }
- #featured p{
-    color: #111;
- }
- .featur{
-    padding-top: 520px;
-    padding-left: 40px;
- }
- 
-
- #featured1{
-      background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_706,c_limit/657d487a-71c9-4b92-a883-724708868848/nike-just-do-it.png") no-repeat center center/cover;
-      padding-top: 555px;
-
- }
- #featured2{
-    background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_706,c_limit/d5062dbc-5dfb-46b9-b463-44339085123f/nike-just-do-it.png") no-repeat center center/cover;
- }
-#small{
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 15px;
+@media screen and (min-width: 1500px) and (max-width: 2200px) {
+  #product .prdt {
+    background-color: #6fd3d6;
+  }
+  .bold {
+    position: absolute;
+    z-index: 2;
+  }
+  video {
+    z-index: 1;
+  }
+  #prdthead input {
+    margin-top: 57px;
+    position: absolute;
+    z-index: 2;
+  }
 }
 
-#dontmiss{
-    margin-top: 80px;
-    margin-bottom: 10px;
-}
-#dontmiss p{
-       font-size: 25px;
-       margin-bottom: 30px;
-}
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  #footer2upperL {
+    left: 467px;
+  }
+  #sidenav {
+    width: 37%;
+  }
 
-#dontmissimg img{
+  #midnavbar {
+    width: 48%;
+    margin-left: 3rem;
+    font-size: 10px;
+  }
+  #search {
+    width: 0.9in;
+    height: 32px;
+  }
+  button {
+    height: 32px;
+    width: 22px;
+  }
+  #sidenavbar2 {
+    width: 24%;
+  }
+  #centertext .small {
+    font-size: 10px;
+  }
+  #centertext p {
+    font-size: 15px;
+  }
+  #home h1 {
+    font-size: 71px;
+  }
+  #home p {
+    margin-bottom: 21px;
+    font-size: 14px;
+  }
+  #home {
+    margin: 24px;
+  }
+
+  #product .prdt {
+    background-color: #6fd3d6;
+  }
+  video {
+    z-index: 1;
+    height: 680px;
+  }
+  #prdthead input {
+    position: relative;
+    z-index: 2;
+  }
+  .bold {
+    position: relative;
+    z-index: 2;
+    margin-top: 48px;
+  }
+  #trending {
+    display: block;
+  }
+  #trendinghead .prdt {
     width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
+    margin-top: 10px;
+    height: 258px;
+  }
+  #trending p {
+    margin-top: -140px;
+  }
+  #justin {
+    margin-top: 45px;
+  }
+  #featured1 {
+    padding-top: 512px;
+  }
+  #featured2 {
+    padding-top: 482px;
+  }
 
-#written{
+  #featured p {
+    margin-top: 10px;
+  }
+  #written {
+    height: 24vh;
+  }
+
+  #written h1 {
+    font-size: 66px;
+  }
+  #written p {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  #written input {
+    font-size: 10px;
+    margin-top: 12px;
+  }
+  #essentialprdt div {
+    width: 31.7%;
+    height: 101%;
+  }
+  #essentialprdt {
+    height: 29vh;
+    align-items: normal;
+  }
+  #essentialprdt input {
+    font-size: 11px;
+    margin-left: 9px;
+    margin-top: 207px;
+    font-size: 9px;
+    margin-left: 24px;
+    margin-top: 213px;
+  }
+
+  #Essential {
+    margin-bottom: 39px;
+  }
+  #footer1 {
+    height: 28vh;
+  }
+  #footer1:hover .hidden li {
+    font-size: 11px;
+  }
+  #footer1:hover {
+    height: 35vh;
+  }
+  #footer1 li {
+    font-size: 11px;
+  }
+  #footer2upperR li {
+    font-size: 10px;
+  }
+  #footer2 {
+    height: 40vh;
+  }
+  #footerlowerL,
+  #footerlowerR {
+    font-size: 9px;
+  }
+  #dontmissimg img {
     width: 100%;
     height: 40vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#written h1{
-    font-weight: 900;
-    font-family: 'Archivo Black', sans-serif;
-    font-family: 'Bebas Neue', sans-serif;
-    font-family: 'Staatliches', cursive;
-    font-size: 90px;
-}
-#written p{
-    font-size: 18px;
-    margin-top: 17px;
-}
-#written input{
-    background-color:#111 ;
-    color:white;
-    padding: 8px 20px;
-    border: none;
-    border-radius: 17px;
-    font-size: 16px;
-    margin-left: 10px;
-    margin-top: 30px
-}
-#written input:hover{
-    opacity: .6;
-}
-#Essential{
-    margin-bottom: 100px;
-}
-#Essential p{
-    font-size: 25px;
-    margin-bottom: 30px; 
-}
-#essentialprdt{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    height: 70vh;
-}
-#essentialprdt div{
-    width: 32.7%;
-    height: 100%
+  }
 }
 
-#essentialprdt input{
-    background-color:white;
-    color:#111;
-    padding: 8px 20px;
-    /* border: .5px solid #111; */
-    border: none;
-    border-radius: 17px;
-    font-size: 16px;
-    margin-left: 55px;
-    margin-top: 440px
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  #footer2upperL {
+    left: 560px;
+  }
 }
-#essentialprdt input:hover{
-    background-color: #d9d5d5 ;
- }
-#men{
-    background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_540,c_limit/d94bfa7e-9357-406a-a124-1940712dfa0b/nike-just-do-it.png") no-repeat center center/cover;
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+  #footer2upperL {
+    left: 662px;
+  }
 }
-#women{
-    background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_540,c_limit/dc62b322-5c3f-4508-b21c-950683ed460f/nike-just-do-it.png") no-repeat center center/cover;
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+  #footer2upperL {
+    left: 770px;
+  }
 }
-#kid{
-    background: url("https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_540,c_limit/58359474-a0de-4329-959c-55d1652d0912/nike-just-do-it.png") no-repeat center center/cover;
+@media screen and (min-width: 1100px) and (max-width: 1300px) {
+  #footer2upperL {
+    left: 863px;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1500px) {
+  #footer2upperL {
+    left: 1066px;
+  }
 }
 
-
-#footer1{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 35vh;
-    position: relative;
-}
-#footer1 li{
-        list-style: none;
-        font-size: 16px;
-        margin: 10px 10px 15px 10px;
-        color: #757575;
-}
-#footer1 li:hover{
-    color: #111;
-}
-#footer1 .hidden li{
-    list-style: none;
-    font-size: 16px;
-    margin: 9px;
-    color: #757575;
-
-}
-#footer1 .hidden .hidden1{
-    margin-top: 0px;
-}
-#footer1 .hidden{
-    margin-left: 1px;
+@media screen and (min-width: 440px) and (max-width: 700px) {
+  #frontnav {
+    width: 100px;
+  }
+  #frontlogo {
+    margin-left: 3px;
+  }
+  button {
     display: none;
-    position: absolute;
-}
-#footer1 .hidden li:hover{
-    color: #111;
-}
-#footer1:hover{
-    height: 60vh;
-}
-#footer1:hover .hidden{
+  }
+  #search {
+    display: none;
+  }
 
-    display: flex;
-    flex-direction: column;
-    
-}
-#footer1 .black{
-    margin-bottom: 40px;
-    color: black;
-}
-
-#footer2{
-    width: 100%;
-    height: 50vh;
-    background-color: #111;
-    color: white;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-#footer2upper{
-    display: flex;
-    justify-content: space-between;
-}
-#footer2upperR{
-    display: flex;
-    justify-content: space-evenly;
-    /* align-items: center; */
-    margin-top: 30px;
-    
-    position: absolute;
-    width: 50%;
-    height: 90%;
-
-}
-#footer2upperL{
-    /* width: 30%; */
-    position: absolute;
-    top: 50px;
-    left: 1250px;
-}
-#footer2upperL div svg{
-    margin: 7px;
-}
-#footer2upperL div{
-    margin-right: 50px;
-}
-#footer2upperR li{
-    list-style: none;
-    margin: 18px;
-    color: #757575;
-    font-size: 12px;
-
-}
-#footer2upperR li:hover{
-    color: white;
-}
-#footer2upperR .white{
-    color: white;
-}
-#footer2lower{
-   
-    display: flex;
-    justify-content: space-between;
-
-}
-#footerlowerR{
-    margin: 10px 10px 10px 50px;
-    display: flex;
+  #midnavbar {
+    font-size: 9px;
+    margin-left: 0px;
+    width: 76%;
+  }
+  #sidenav {
     width: 300px;
-    /* justify-content: space-evenly; */
-    font-size: 13px;
-    color: #757575;
-
-}
-#footerlowerR p{
-    margin-left: 30px;
-}
-#footerlowerR .white{
-    margin-left: 5px;
-}
-#footerlowerL{
-    margin: 10px 50px 10px 10px;
-    display: flex;
-    width: 450px;
+  }
+  .item {
+    font-size: 8px;
+  }
+  #wishlist {
+    display: none;
+  }
+  #footer2upperL div {
+    margin: 0;
+  }
+  #footer2upperL {
+    left: 344px;
+  }
+  #centertext .small {
+    font-size: 8px;
+  }
+  #centertext p {
     font-size: 12px;
-    color: #757575;
-    justify-content: space-evenly;
+  }
+  #home h1 {
+    font-size: 43px;
+  }
+  #home p {
+    margin-bottom: 13px;
+    font-size: 12px;
+  }
+  #home {
+    margin: 9px;
+  }
+  #product {
+    margin-top: 34px;
+  }
+  #product > p {
+    font-size: 16px;
+  }
+  #prdthead {
+    display: block;
+  }
+  #product #prdt1 {
+    width: 100%;
+    height: 335px;
+  }
+  #product #prdt2 {
+    width: 100%;
+    height: 335px;
+    padding-top: 260px;
+    background-color: #6fd3d6;
+    margin-top: 10px;
+  }
+  #prdt2 .bold {
+    position: relative;
+    z-index: 2;
+  }
+  #prdthead input {
+    position: absolute;
+    z-index: 2;
+  }
+  #prdt1 {
+    padding-top: 199px;
+  }
+  #prdt1 #prdt101 {
+    font-size: 12px;
+  }
+  .bold {
+    font-size: 15px;
+  }
+  #prdthead input {
+    font-size: 7px;
+    margin-top: 0;
+  }
+  video {
+    height: 333px;
+    z-index: 1;
+  }
+  #trendinghead {
+    display: none;
+  }
+  #easy h1 {
+    font-size: 53px;
+  }
+  #easy p {
+    margin-top: 4px;
+    font-size: 10px;
+  }
+  #easy input {
+    font-size: 8px;
+    margin-top: 13px;
+  }
+  #easy {
+    margin: 0px;
+  }
 
-}
-#footerlowerL p:hover{
-color: white;
-}
-#footerlowerR .white{
-    color: white;
+  #featuredhead {
+    display: none;
+  }
+  #dontmiss {
+    margin-top: 0px;
+  }
+  #dontmiss p {
+    font-size: 16px;
+    margin-bottom: 17px;
+  }
+  #dontmissimg img {
+    height: 33vh;
+  }
+  #written {
+    height: 32vh;
+  }
+  #written p {
+    font-size: 10px;
+    text-align: center;
+  }
+  #written h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    font-family: "Staatliches", cursive;
+    font-size: 45px;
+  }
+  #written input {
+    font-size: 8px;
+    margin-top: 13px;
+  }
+  #Essential p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  #essentialprdt {
+    height: 21vh;
+  }
+  #essentialprdt div {
+    height: 98%;
+  }
+  #essentialprdt input {
+    font-size: 10px;
+    margin-left: 16px;
+    margin-top: 135px;
+  }
+  #Essential {
+    margin-bottom: 26px;
+  }
+  #footer1 {
+    height: 30vh;
+  }
+  #footer1 li {
+    font-size: 13px;
+  }
+  #footer1 .hidden li {
+    font-size: 13px;
+  }
+  #footer2upperR li {
+    font-size: 10px;
+  }
+  #footer1 div {
+    width: 30%;
+  }
+  #footer2 {
+    height: 54vh;
+  }
+  #footerlowerL {
+    /* font-size: 9px; */
+    display: none;
+  }
+  #footerlowerR {
+    font-size: 8px;
+  }
 }
 
-.social-link-icon{
-    background-color:  #7e7e7e;
-    border-radius: 55%;
-    border: none;
-}
-.social-link-icon:hover{
-    background-color: white;
+@media screen and (min-width: 270px) and (max-width: 440px) {
+  #footer2upperL {
+    left: 188px;
+    top: 32px;
+  }
+
+  #midnavbar {
+    display: none;
+  }
+  #sidenav {
+    width: 68%;
+  }
+  #forntnav {
+    padding: 9px 53px;
+    width: 20px;
+  }
+  button {
+    display: none;
+  }
+  #search {
+    width: 0.7in;
+    height: 16px;
+  }
+
+  #sidenavbar2 {
+    width: 54%;
+  }
+  #written h1 {
+    font-size: 60px;
+  }
+  #written {
+    text-align: center;
+    height: 53vh;
+  }
+  #footer2col2 {
+    display: none;
+  }
+  #footerlowerL {
+    display: none;
+  }
+  #footer1col4 {
+    display: none;
+  }
+  #body {
+    margin: 0 18px;
+  }
+  #essentialprdt {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 97vh;
+    gap: 10px;
+  }
+  #essentialprdt div {
+    width: 100%;
+    height: 100%;
+  }
+  #essentialprdt input {
+    font-size: 15px;
+    margin-left: 14px;
+    margin-top: 165px;
+  }
+  #footer1 li {
+    font-size: 12px;
+  }
+  #footer1:hover #footer1 li {
+    font-size: 12px;
+  }
+  #footer1:hover .hidden {
+    width: 30%;
+  }
+  #footer1 .hidden li {
+    font-size: 12px;
+  }
+  #written p {
+    font-size: 14px;
+    margin-top: 3px;
+  }
+  #Essential {
+    margin-bottom: 28px;
+  }
+  #footer1:hover {
+    height: 54vh;
+  }
+  #footer1 {
+    height: 38vh;
+  }
+  #footer2 {
+    height: 43vh;
+  }
+  #footer2col1 {
+    padding-left: 51px;
+  }
+  #footerlowerR p {
+    font-size: 8px;
+  }
+  #sidenav {
+    width: 95%;
+  }
+  #frontnav {
+    width: 20px;
+    padding: 7px 45px;
+  }
+  #sidenavitem1 {
+    display: none;
+  }
+  .small {
+    font-size: 10px;
+  }
+  #centertext:first-child {
+    font-size: 14px;
+  }
+  #home h1 {
+    font-size: 43px;
+  }
+  #home {
+    text-align: center;
+  }
+  #home p {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+  #home input {
+    font-size: 10px;
+  }
+  #trendinghead {
+    display: none;
+  }
+  #product .prdt {
+    width: 100%;
+    height: 491px;
+  }
+  #prdthead {
+    display: block;
+    position: relative;
+  }
+
+  #product #prdt2 {
+    /* width: 100%;
+        height: 335px;
+        padding-top: 260px; */
+    background-color: #6fd3d6;
+    /* margin-top: 10px; */
+    margin-top: 10px;
+  }
+  #frontnavsvg {
+    width: 20px;
+  }
+  video {
+    position: absolute;
+    z-index: 1;
+  }
+  #prdt1 #prdt101 {
+    margin: 10px;
+    position: absolute;
+    top: 414px;
+  }
+  #prdt1 .bold {
+    position: absolute;
+    top: 389px;
+  }
+  #prdthead input {
+    position: absolute;
+    top: 444px;
+    font-size: 12px;
+    z-index: 2;
+  }
+  #prdt2 .bold {
+    position: absolute;
+    top: 389px;
+    z-index: 2;
+  }
+  #easy {
+    text-align: center;
+  }
+  #easy h1 {
+    font-size: 51px;
+  }
+  #easy p {
+    font-size: 16px;
+  }
+  #easy input {
+    font-size: 14px;
+    margin-top: 9px;
+  }
+  #featuredhead {
+    display: none;
+  }
+  #dontmissimg img {
+    height: 18vh;
+  }
+  #written input {
+    font-size: 15px;
+    margin-top: 11px;
+  }
 }
